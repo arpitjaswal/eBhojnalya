@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background: antiquewhite;
+    border: 1.5px red solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.header .logo{
+    /* border: 1px black solid; */
+    color: red;
+    font-size: 30px;
+}
+
+.navbar{
+    /* border: 1px black solid; */
+    width: 800px;
+    
+}
+
+.navbar .links{
+    /* border: 1px black solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 400px;
+    
+}
+.navbar .links .link{
+    color: blue;
+    margin: 3px;
+    padding: 3px;
+}
+.navbar .links .link .quantity{
+    background: orangered;
+    color: white;
+    border-radius: 20px;
+    margin: 2px;
+    padding: 2px;
+}
+.navbar .links .logout{
+    background: red;
+    color: white;
+    margin: 3px;
+    padding: 3px;
+    border-radius: 4px;
+}
+.navbar .links .logout:hover{
+
+    margin: 3px;
+    padding: 3px;
+    border-radius: 12px;
+}
+.navbar .links .link:hover{
+    background-color: red;
+   color: white;
+   border-radius: 12px;
+}
+
+
+
