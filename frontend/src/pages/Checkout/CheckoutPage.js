@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
-import { createOrder } from '../../services/orderService';
+import { createOrder } from '../../services/services/orderService.js';
 import classes from './checkoutPage.module.css';
 import Title from '../../components/Title/Title';
 import Input from '../../components/Input/Input';

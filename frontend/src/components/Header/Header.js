@@ -13,7 +13,13 @@ export default function Header() {
     <header className={classes.header}>
       <div className={classes.container}>
         <Link to="/" className={classes.logo}>
-          Food Mine!
+        <img
+  src="https://gcdnb.pbrd.co/images/OFQOaXbAhMh7.png?o=1"
+  alt=""
+  style={{ height: '40px', width: '120px' }}
+/>
+
+
         </Link>
         <nav>
           <ul>

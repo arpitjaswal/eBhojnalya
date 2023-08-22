@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import classes from './paymentPage.module.css';
-import { getNewOrderForCurrentUser } from '../../services/orderService';
+import { getNewOrderForCurrentUser } from '../../services/services/orderService';
 import Title from '../../components/Title/Title';
 import OrderItemsList from '../../components/OrderItemsList/OrderItemsList';
 import Map from '../../components/Map/Map';

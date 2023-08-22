@@ -1,5 +1,10 @@
 import axios from 'axios';
 
+export const getById = async foodId => {
+  const { data } = await axios.get('/api/foods/' + foodId);
+  return data;
+};
+
 export const getAll = async () => {
   const { data } = await axios.get('/api/foods');
   return data;
@@ -21,7 +26,4 @@ export const getAllByTag = async tag => {
   return data;
 };
 
-export const getById = async foodId => {
-  const { data } = await axios.get('/api/foods/' + foodId);
-  return data;
-};
+

@@ -5,8 +5,8 @@ import {
 } from '@paypal/react-paypal-js';
 import React, { useEffect } from 'react';
 import { useLoading } from '../../hooks/useLoading';
-import { pay } from '../../services/orderService';
-import { useCart } from '../../hooks/useCart';
+import { pay } from '../../services/services/orderService.js';
+import { useCart } from '../../hooks/useCart.js';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ export default function PaypalButtons({ order }) {
     <PayPalScriptProvider
       options={{
         clientId:
-          'AUWcnaHjOUoXVI3IjLpMkM0Kk0Sigq1CUAWP-finHI950yQD2Qni8XPkRbs76Q-_JIT8hJFhKD8YVy3u',
+          'AdaeCaMuJXYkknbB4OFS0NjiXy7YUfHiYSAXhxtmo0E1W67SBDaWFTcfmJcoCYvt-7aRO1nMNLtr-NKc',
       }}
     >
       <Buttons order={order} />

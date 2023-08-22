@@ -1,0 +1,15 @@
+{
+  "name": "e-bhojnalya",
+  "version": "1.0.0",
+  "description": "A food ordering application built using MERN stack as the major project for the Batch 09 final submission.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": " npm i && concurrently \" cd frontend && npm run start\" \"cd backend && npm run dev\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
