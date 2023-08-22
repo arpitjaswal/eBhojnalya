@@ -1,68 +1,65 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.header {
+  background: white;
+  padding: 0;
+  border-bottom: 1px solid #e72929;
 }
 
-.header{
-    background: antiquewhite;
-    border: 1.5px red solid;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 18px;
+.header a {
+  color: #af1313;
 }
 
-.header .logo{
-    /* border: 1px black solid; */
-    color: red;
-    font-size: 30px;
+.header a:hover {
+  background: #e72929;
+  color: white;
+  cursor: pointer;
 }
 
-.navbar{
-    /* border: 1px black solid; */
-    width: 800px;
-    
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-.navbar .links{
-    /* border: 1px black solid; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-left: 400px;
-    
-}
-.navbar .links .link{
-    color: blue;
-    margin: 3px;
-    padding: 3px;
-}
-.navbar .links .link .quantity{
-    background: orangered;
-    color: white;
-    border-radius: 20px;
-    margin: 2px;
-    padding: 2px;
-}
-.navbar .links .logout{
-    background: red;
-    color: white;
-    margin: 3px;
-    padding: 3px;
-    border-radius: 4px;
-}
-.navbar .links .logout:hover{
-
-    margin: 3px;
-    padding: 3px;
-    border-radius: 12px;
-}
-.navbar .links .link:hover{
-    background-color: red;
-   color: white;
-   border-radius: 12px;
+.logo {
+  font-weight: bold;
+  padding: 1rem;
 }
 
+.header ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
 
+.header ul a {
+  padding: 1rem;
+  display: inline-block;
+}
 
+.menu_container {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  z-index: 1001;
+  background-color: whitesmoke;
+  display: none;
+}
+
+.menu_container:hover .menu {
+  display: block;
+}
+
+.menu a {
+  width: 100%;
+  min-width: 8rem;
+}
+
+.cart_count {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 0.1rem 0.45rem;
+  border-radius: 100rem;
+  font-size: 0.9rem;
+}
